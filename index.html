@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi StoryMap con Leyenda Dinámica</title>
+    <link rel="stylesheet" href="lib/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="slides">
+                <!-- Diapositivas -->
+                <div class="slide" data-lat="4.598096" data-lng="-74.075679" data-zoom="18">
+                    <h2>Índice</h2>
+                    <div id="index"></div>
+                </div>
+                <!-- Más diapositivas según sea necesario -->
+
+                <div class="slide" data-lat="4.598096" data-lng="-74.075679" data-zoom="18">
+                    <h2>¿Cuál es el contexto previo a la intervención en la Plaza de Bolívar?</h2>
+                    <figure>
+                        <img src="assets/images/plaza de bolívar.jpeg" alt="Imagen 1">
+                        <figcaption>Plaza de Bolívar antes de la intervención</figcaption> <!-- Título de la imagen -->
+                    </figure>
+                    <p>Actores: <u><strong style="color: red;">28</strong></u></p>
+                    <p>Residuos: <u><strong style="color: red;">22</strong></u></p>
+                    <p>Escenarios: <u><strong style="color: red;">11</strong></u></p>
+
+                    <p>Se encuentra presencia de vendedores informales, la mayoría de ellos cuenta con puesto con sombrilla y la mayoría de productos a la venta son confitería, 
+                    comidas rápidas fritas, mazorcas y maíz para alimentar las palomas. La plaza es visitada frecuentemente por gran afluencia de transeúntes que trabajan o estudian 
+                    en la zona y turistas de otras regiones del país o de otros países.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+            <div id="backToIndexButton">Volver al Índice</div>
+            <div id="legend">
+                <button id="toggle-legend">Minimizar</button> <!-- Botón para minimizar la leyenda -->
+                <div id="legend-content">
+                    <!-- Aquí se generará el contenido de la leyenda dinámicamente -->
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="lib/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
